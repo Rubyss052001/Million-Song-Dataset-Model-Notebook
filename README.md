@@ -153,6 +153,6 @@ pip install notebook
 
 ## Authors
 
-- **Shishi Jiang** (u1583346)
+- **Shishi Jiang**
 
 
