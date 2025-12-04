@@ -71,8 +71,9 @@ Trained and evaluated models:
   - Gradient-boosted trees
   - Reports metrics and top-10 feature importances
   - Confusion matrix visualization
+  - SHAP
 
-- **CatBoost (CatBoostClassifier)**
+- **CatBoost (CatBoostClassifier) -- Extra**
   - Gradient boosting with ordered boosting
   - Reports metrics and top-10 feature importances
   - Confusion matrix visualization
@@ -114,20 +115,31 @@ pip install notebook
 
 ## How to Run
 
-1. Open a terminal and navigate to the project folder:
+1. Clone this repository and navigate to the project folder:
 
    ```bash
-   cd "/Users/ruby/Desktop/Ph.D/1st year/Courses/Mchine Learning/Project/2nd checkpoint"
+   git clone <your-repo-url>.git
+   cd <your-repo-folder>
    ```
 
-2. Start Jupyter:
+2. (Optional but recommended) create and activate a virtual environment.
+
+3. Install the required Python packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   or, if you are not using a `requirements.txt`, install the packages listed above manually.
+
+4. Start Jupyter:
 
    ```bash
    jupyter notebook
    ```
 
-3. Open `MillionSong_Model.ipynb` in the browser.
-4. Run all cells from top to bottom (**Kernel → Restart & Run All**) to:
+5. Open `MillionSong_Model.ipynb` in the browser.
+6. Run all cells from top to bottom (**Kernel → Restart & Run All**) to:
    - Load and explore the data
    - Train all models
    - Generate evaluation metrics, plots, and SHAP explanations
